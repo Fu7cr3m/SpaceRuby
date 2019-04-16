@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spacerails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+      <ul>
+         <li><a class="active"><%= link_to "ALIENS", aliens_path %></a></li>
+         <li><a><%= link_to "PLANETS", planets_path %></a></li>
+         <li><a><%= link_to "POWERS", powers_path %></a></li>
+      </ul>
+
+    <%= yield %>
+  </body>
+</html>
